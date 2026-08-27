@@ -109,18 +109,75 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 35),
-               Column(
-                children:
-                  [
-                    Text("About Me",textAlign: TextAlign.left,style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
-                    SizedBox(width: 10),
-                     Text("Hello, I am a Flutter developer.",textAlign: TextAlign.center,style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
-                  ]
+              SizedBox(height: 20),
+               Padding(
+                 padding: const EdgeInsets.all(8.0),
+                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children:
+                    [
+                 
+                      Divider(height: 5, color: Colors.grey,thickness: 0.5,),
+                      
+                      Text("About Me", style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
+                      SizedBox(height: 10),
+                       Text("Hello, I am a Flutter developer.",style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
+                       Divider(height: 8, color: const Color.fromARGB(255, 148, 139, 139),thickness: 0.5,),
+                    ]
+                           
+                               ),
+                               
+               ),
           
-              ),
-          
-                
+                Expanded(
+                  child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                                 children: [
+                  Padding(
+                    padding: const EdgeInsets.all(30.0),
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.star),
+                            color: Colors.amber,
+                            iconSize: 30,
+                          ),
+                          Text("4.5",style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
+                          Text("Rating",style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
+                        ]
+                        
+                    ),
+                  ),
+                  SizedBox(width: 15),
+                  VerticalDivider(
+                    color: Colors.grey,
+                    thickness: 0.5,
+                    width: 8,
+                    
+                  ),
+                Padding(
+                  padding: const EdgeInsets.all(30.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.business_center),
+                        color: Colors.blue,
+                        iconSize: 30,
+                      ),
+                      Text("3 Years",style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
+                      Text("Experience",style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
+                    ],
+                  ),
+                ),
+                 
+                                 ],
+                  
+                  ),
+                ),
                 
 
             ],
